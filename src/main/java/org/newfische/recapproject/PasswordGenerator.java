@@ -3,7 +3,11 @@ package org.newfische.recapproject;
 import java.security.SecureRandom;
 
 public class PasswordGenerator {
-    public String createPassword() {
+    public static void main (String[] args){
+       String password = createPassword();
+        System.out.println("The unique password is: "+password);
+    }
+    public static String createPassword() {
         final String allCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+[]{}|;:'\",.<>?/";
         final String uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         final String lowerCaseLetters = "abcdefghijklmnopqrstuvwxyz";

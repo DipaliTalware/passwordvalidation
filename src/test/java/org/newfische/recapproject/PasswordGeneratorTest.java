@@ -21,7 +21,6 @@ class PasswordGeneratorTest {
     Assertions.assertTrue(result);
 
     result = validator.validatePasswordContainsDigits(password);
-    System.out.println(password);
     Assertions.assertTrue(result);
 
     result = validator.validateSpecialCharactersInPassword(password);
